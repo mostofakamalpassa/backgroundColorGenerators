@@ -9,13 +9,17 @@ window.onload = ()=>{
 
 function main(){
 
+
+    const copyColor = document.getElementById('color-code');
+
     document.getElementById('change-btn').addEventListener('click', function(e){
   
         const body = document.getElementById('body');
         const bgColor = generatorColor();
-
         body.style.backgroundColor = bgColor;
-        console.log(bgColor);
+
+        copyColor.value = bgColor;
+        //console.log(bgColor);
 
     })
 
@@ -34,6 +38,7 @@ function generatorColor(){
    const green =  Math.floor(Math.random()*255);
    const blue = Math.floor(Math.random()*255);
    
-   return `rgb(${red}, ${green}, ${blue})`;
+//    return `rgb(${red}, ${green}, ${blue})`;
+   return `#${red.toString(16)}${green.toString(16)}${blue.toString(16)}`;
 
 }

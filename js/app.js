@@ -13,7 +13,7 @@ function main(){
   
         const body = document.getElementById('body');
         const bgColor = generatorColor();
-        
+
         body.style.backgroundColor = bgColor;
         console.log(bgColor);
 

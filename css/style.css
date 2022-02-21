@@ -35,3 +35,21 @@ button.generator-center:hover {
     background: blue;
     color: #fff;
 }
+
+.px{
+    padding:0 10px;
+}
+
+.py{
+    padding: 10px 0;
+}
+.d-block{
+    display: block;
+}
+
+.mx{
+    margin: 0 auto;
+}
+.my{
+    margin: 10px;
+}
